@@ -10,6 +10,7 @@ class Game:
         self.player_scores = {}
         self.player_order = []
         self.setup_players(player_count)
+        self.per_player_guesses = {player:[] for player in self.player_scores}
         self.per_player_strikes = {player:0 for player in self.player_scores}
         self.game_data_file_path = self.create_game_save_file()
         
@@ -31,10 +32,11 @@ class Game:
                     print(" | ".join(self.create_player_scores_list()))
                     print(f"{player}'s turn")
                     self.player_scores[player] += self.score_player(player)
-                    self.save_game_data()
                 else:
                     print(f"Skipping {player}'s turn!")
-
+                    self.per_player_guesses[player].append(f"Skipped!")
+        
+            self.save_game_data()
             self.player_order.reverse() # allows for "snake" turn ordering
             should_loop_again += input("Press enter for next round ")
             os.system("cls")
