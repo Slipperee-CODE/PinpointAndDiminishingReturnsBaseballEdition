@@ -23,12 +23,13 @@ class DiminishingReturns(Game):
             self.per_player_ceilings[player_name] = stat
 
             self.guessed_bb_players.add(bb_player)
-            self.per_player_guesses[player_name].append(f"{stat} {bb_player}")
+            self.per_player_guesses[player_name].append(f"+1 ({stat}) {bb_player}")
             return 1
         
         if self.per_player_ceilings[player_name] > stat: # might need to be changed to ">=" depending on if players must guess strictly below their ceiling or can guess at ceiling
             self.guessed_bb_players.add(bb_player)
             self.per_player_guesses[player_name].append(f"+1 ({stat}) {bb_player}")
+            self.per_player_ceilings[player_name] = stat
             return 1
         else: # strike
             self.guessed_bb_players.add(bb_player)
@@ -46,6 +47,15 @@ class DiminishingReturns(Game):
             print(f"get_player_guess errored with \"{e}\", try again")
             retry = self.get_player_guess()
             return retry[0], retry[1], retry[2]
+
+    @override
+    def create_player_scores_list(self):
+        og_list = super().create_player_scores_list()
+
+        for index, player in enumerate(self.per_player_ceilings):
+            og_list[index] = og_list[index] + f" ({self.per_player_ceilings[player]})"
+        
+        return og_list
 
     @override
     def save_game_specific_save_data(self):

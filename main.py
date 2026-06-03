@@ -1,6 +1,7 @@
 from Pinpoint import Pinpoint
 from DiminishingReturns import DiminishingReturns
 
-# Pinpoint(3)
+# the games requires each player to have a unique name to function properly
 
-DiminishingReturns(3)
+Pinpoint(3)
+# DiminishingReturns(3)

@@ -24,9 +24,7 @@ class Game:
         return [player + ": " + str(self.player_scores[player]) for player in self.player_scores]
 
     def play(self):
-        should_loop_again = "Y"
-        
-        while should_loop_again == "Y":
+        while True:
             for player in self.player_order:
                 if self.per_player_strikes[player] < self.MAX_STRIKES:
                     print(" | ".join(self.create_player_scores_list()))
@@ -38,7 +36,7 @@ class Game:
         
             self.save_game_data()
             self.player_order.reverse() # allows for "snake" turn ordering
-            should_loop_again += input("Press enter for next round ")
+            input("Press enter for next round ")
             os.system("cls")
 
     # to be overridden in subclasses
@@ -47,13 +45,14 @@ class Game:
 
     def create_game_save_file(self):
         now = datetime.now()
-        filename = self.__class__.__name__ + "@" + now.strftime("%Y-%m-%d %H_%M_%S")
+        filename = self.__class__.__name__ + "@" + now.strftime("%Y-%m-%d %H_%M_%S") + ".txt"
         file_path = Path(self.GAME_DATA_PATH + filename)
         file_path.write_text("No data yet.", encoding="utf-8")
 
         return file_path
 
     def save_game_data(self):
+        # self.game_data_file_path.write_text(self.game_data_file_path.name + "\n" + self.save_game_specific_save_data(), encoding="utf-8")
         self.game_data_file_path.write_text(self.save_game_specific_save_data(), encoding="utf-8")
 
     # to be overridden in subclasses
