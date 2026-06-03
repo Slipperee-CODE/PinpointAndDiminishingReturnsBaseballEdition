@@ -4,11 +4,13 @@ import os
 
 class Game:
     GAME_DATA_PATH = "PastGameData\\"
+    MAX_STRIKES = 3
 
     def __init__(self, player_count:int):
         self.player_scores = {}
         self.player_order = []
         self.setup_players(player_count)
+        self.per_player_strikes = {player:0 for player in self.player_scores}
         self.game_data_file_path = self.create_game_save_file()
         
     def setup_players(self, player_count):
@@ -25,11 +27,14 @@ class Game:
         
         while should_loop_again == "Y":
             for player in self.player_order:
-                print(" | ".join(self.create_player_scores_list()))
-                print(f"{player}'s turn")
-                self.player_scores[player] += self.score_player(player)
-                self.save_game_data()
-            
+                if self.per_player_strikes[player] < self.MAX_STRIKES:
+                    print(" | ".join(self.create_player_scores_list()))
+                    print(f"{player}'s turn")
+                    self.player_scores[player] += self.score_player(player)
+                    self.save_game_data()
+                else:
+                    print(f"Skipping {player}'s turn!")
+
             self.player_order.reverse() # allows for "snake" turn ordering
             should_loop_again += input("Press enter for next round ")
             os.system("cls")

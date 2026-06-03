@@ -21,9 +21,10 @@ class Pinpoint(Game):
             print(f"The player \"{bb_player}\" has already been guessed.")
             rk, bb_player = self.get_player_guess()
 
-        if rk > self.MAX_ACCEPTED_RANK:
+        if rk > self.MAX_ACCEPTED_RANK: # strike
             self.guessed_bb_players.add(bb_player)
             self.per_player_guesses[player_name].append(f"+0 ({str(rk)}) {bb_player}")
+            self.per_player_strikes[player_name] += 1
             return 0
         
         self.guessed_bb_players.add(bb_player)
