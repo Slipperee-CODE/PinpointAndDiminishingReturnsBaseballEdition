@@ -62,3 +62,4 @@ class Game:
     # to be overridden in subclasses
     def load_game_specific_save_data(self):
         ...
+        
