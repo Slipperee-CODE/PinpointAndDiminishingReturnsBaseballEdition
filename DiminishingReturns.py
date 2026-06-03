@@ -34,11 +34,12 @@ class DiminishingReturns(Game):
             self.guessed_bb_players.add(bb_player)
             self.per_player_strikes[player_name] += 1
             self.per_player_guesses[player_name].append(f"{self.per_player_strikes[player_name]}X ({stat}) {bb_player}")
+            print(f"{player_name}'s strike {self.per_player_strikes[player_name]}!")
             return 0
 
     def get_player_guess(self):
         try:
-            baseball_player_info = input("Provide (Rk   Player Name  Stat): ")
+            baseball_player_info = input("Provide (Rk   Player Name   Stat): ")
             baseball_player_info = baseball_player_info.split("\t")
             return int(baseball_player_info[0]), baseball_player_info[1], int(baseball_player_info[2])
         except Exception as e:
