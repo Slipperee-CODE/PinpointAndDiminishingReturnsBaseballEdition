@@ -35,7 +35,7 @@ class Game:
                     self.per_player_guesses[player].append(f"Skipped!")
         
             self.save_game_data()
-            self.player_order.reverse() # allows for "snake" turn ordering
+            self.player_order.reverse() # allows for "snake" turn-ordering
             input("Press enter for next round ")
             os.system("cls")
 
