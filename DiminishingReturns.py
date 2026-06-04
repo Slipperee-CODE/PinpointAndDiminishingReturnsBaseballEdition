@@ -63,3 +63,4 @@ class DiminishingReturns(Game):
         data = list(zip(*self.per_player_guesses.values()))
 
         return tabulate(data, headers=headers, tablefmt="github")
+    
