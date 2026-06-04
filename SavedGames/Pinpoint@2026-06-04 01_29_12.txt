@@ -1,0 +1,27 @@
+| J: 654                     | TO: 1419                | TM: 24                |
+|----------------------------|-------------------------|-----------------------|
+| +6 Freddie Freeman         | +93 Mike Trout          | +1 Albert Pujols      |
+| 1X (113) Giancarlo Stanton | +65 Nelson Cruz         | +18 Joey Votto        |
+| +34 Bryce Harper           | +70 Ichiro Suzuki       | +3 David Ortiz        |
+| +97 Christian Yelich       | +52 Álex Rodríguez      | 1X (298) Aaron Judge  |
+| +12 Paul Goldschmidt       | +29 Nolan Arenado       | 2X (167) Corey Seager |
+| +19 Andrew McCutchen       | 1X (123) Kyle Seager    | +2 Miguel Cabrera     |
+| +86 Francisco Lindor       | +32 José Ramírez        | 3X (102) Jeff Kent    |
+| 2X (367) Byron Buxton      | 2X (257) Chris Davis    | Skipped!              |
+| +47 Mookie Betts           | +13 Aramis Ramírez      | Skipped!              |
+| +44 Manny Machado          | +87 Adam LaRoche        | Skipped!              |
+| +5 Robinson Canó           | +92 Plácido Polanco     | Skipped!              |
+| +77 Justin Turner          | +99 Brian Giles         | Skipped!              |
+| +35 Chase Utley            | +54 José Reyes          | Skipped!              |
+| +95 Adam Dunn              | +40 Mark Teixeira       | Skipped!              |
+| +14 Alfonso Soriano        | +88 Shin-Soo Choo       | Skipped!              |
+| +83 Manny Ramírez          | +71 Magglio Ordóñez     | Skipped!              |
+| 3X (222) Nomar Garciaparra | +67 Edwin Encarnación   | Skipped!              |
+| Skipped!                   | +50 J.D. Martinez       | Skipped!              |
+| Skipped!                   | +94 Charlie Blackmon    | Skipped!              |
+| Skipped!                   | +89 Matt Kemp           | Skipped!              |
+| Skipped!                   | +58 Elvis Andrus        | Skipped!              |
+| Skipped!                   | +76 Howie Kendrick      | Skipped!              |
+| Skipped!                   | +100 Matt Carpenter     | Skipped!              |
+| Skipped!                   | 3X (104) Salvador Perez | Skipped!              |
+| Skipped!                   | Skipped!                | Skipped!              |
