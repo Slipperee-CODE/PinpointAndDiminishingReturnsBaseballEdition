@@ -23,18 +23,25 @@ class Game:
     def create_player_scores_list(self):
         return [player + ": " + str(self.player_scores[player]) for player in self.player_scores]
 
+    def add_default_guesses(self):
+        for player in self.per_player_guesses:
+            self.per_player_guesses[player].append("---")
+
     def play(self):
         while True:
+            self.add_default_guesses()
             for player in self.player_order:
+                self.per_player_guesses[player].pop()
                 if self.per_player_strikes[player] < self.MAX_STRIKES:
                     print(" | ".join(self.create_player_scores_list()))
                     print(f"{player}'s turn")
                     self.player_scores[player] += self.score_player(player)
                 else:
                     print(f"Skipping {player}'s turn!")
-                    self.per_player_guesses[player].append(f"Skipped!")
-        
-            self.save_game_data()
+                    self.per_player_guesses[player].append("Skipped!")
+
+                self.save_game_data()
+
             self.player_order.reverse() # allows for "snake" turn-ordering
             input("Press enter for next round ")
             os.system("cls")

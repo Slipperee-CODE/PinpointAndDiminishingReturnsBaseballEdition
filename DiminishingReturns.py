@@ -26,7 +26,7 @@ class DiminishingReturns(Game):
             self.per_player_guesses[player_name].append(f"+1 ({stat}) {bb_player}")
             return 1
         
-        if self.per_player_ceilings[player_name] > stat: # might need to be changed to ">=" depending on if players must guess strictly below their ceiling or can guess at ceiling
+        if self.per_player_ceilings[player_name] >= stat:
             self.guessed_bb_players.add(bb_player)
             self.per_player_guesses[player_name].append(f"+1 ({stat}) {bb_player}")
             self.per_player_ceilings[player_name] = stat
