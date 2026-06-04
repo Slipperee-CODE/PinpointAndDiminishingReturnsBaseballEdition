@@ -42,7 +42,9 @@ class Game:
 
                 self.save_game_data()
 
-            self.player_order.reverse() # allows for "snake" turn-ordering
+            # handles 1 v 1 situation
+            if len([player for player in self.per_player_strikes if self.per_player_strikes[player] < self.MAX_STRIKES]) > 2:
+                self.player_order.reverse() # allows for "snake" turn-ordering
             input("Press enter for next round ")
             os.system("cls")
 

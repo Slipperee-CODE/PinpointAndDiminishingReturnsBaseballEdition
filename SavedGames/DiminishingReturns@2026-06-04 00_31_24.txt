@@ -1,0 +1,21 @@
+| J: 9 (237)                 | TO: 14 (95)                | TM: 4 (383)               |
+|----------------------------|----------------------------|---------------------------|
+| +1 (762) Barry Bonds       | +1 (755) Henry Aaron       | +1 (714) Babe Ruth        |
+| +1 (630) Ken Griffey Jr.   | +1 (660) Willie Mays       | +1 (609) Sammy Sosa       |
+| +1 (456) Giancarlo Stanton | +1 (536) Mickey Mantle     | +1 (452) Carl Yastrzemski |
+| 1X (475) Stan Musial       | +1 (475) Willie Stargell   | 1X (462) Adam Dunn        |
+| 2X (10000) Gil Hodges      | +1 (354) Luis Gonzalez     | +1 (383) Larry Walker     |
+| +1 (407) Duke Snider       | 1X (396) Joe Carter        | 2X (385) Aaron Judge      |
+| +1 (362) Kyle Schwarber    | +1 (353) Torii Hunter      | 3X (418) Mike Trout       |
+| +1 (257) Juan Soto         | 2X (377) Bryce Harper      | Skipped!                  |
+| +1 (257) J1                | +1 (287) Matt Kemp         | Skipped!                  |
+| +1 (237) Christian Yelich  | +1 (287) M1                | Skipped!                  |
+| +1 (237) C1                | +1 (224) Teoscar Hernández | Skipped!                  |
+| 3X (301) Marcell Ozuna     | +1 (224) T1                | Skipped!                  |
+| Skipped!                   | +1 (208) Joey Gallo        | Skipped!                  |
+| Skipped!                   | +1 (200) Josh Hamilton     | Skipped!                  |
+| Skipped!                   | +1 (109) Aaron Hicks       | Skipped!                  |
+| Skipped!                   | +1 (95) Kevin Kiermaier    | Skipped!                  |
+| Skipped!                   | 3X (114) Kevin Pillar      | Skipped!                  |
+| Skipped!                   | Skipped!                   | Skipped!                  |
+| Skipped!                   | Skipped!                   | Skipped!                  |
